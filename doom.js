@@ -19,5 +19,6 @@ function Mudarcor(novaCor) {
                 p.style.display = 'block'
             } 
         });
+        
 
         
