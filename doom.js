@@ -7,6 +7,21 @@ const rodri_ciculo = document.getElementById('ciculo')
 let tamanho_rodri = 1
 
 
+const imagem = document.getElementById('foto')
+let foto_t = false
+
+
+imagem.addEventListener('click', ()=>{
+   if (foto_t === false) {
+       imagem.src = 'pokedex.png'
+       foto_t = true       
+   }else{
+       imagem.src = 'foto.jpg'
+   }
+});
+
+
+
 rodri_ciculo.addEventListener ('dblclick',()=>{
    rodri_ciculo.style.borderRadius = `${tamanho_rodri}px`;
    rodri_ciculo.style.width = `${tamanho_rodri*2}px`;
